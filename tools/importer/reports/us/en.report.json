@@ -1,0 +1,15 @@
+{
+  "status": "success",
+  "url": "https://publish-p45403-e1547974.adobeaemcloud.com/us/en.html",
+  "path": "us/en",
+  "timestamp": "2026-03-20T02:35:02.898Z",
+  "title": "Frescopa Home",
+  "template": "homepage",
+  "blocks": [
+    "hero",
+    "hero",
+    "banner",
+    "location-finder",
+    "cards"
+  ]
+}

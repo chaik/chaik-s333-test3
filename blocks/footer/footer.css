@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--light-color);
+  background-color: var(--color-footer-beige);
   font-size: var(--body-font-size-xs);
 }
 
@@ -13,8 +13,83 @@ footer .footer p {
   margin: 0;
 }
 
+footer .footer h4 {
+  font-family: var(--body-font-family);
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 0 0 12px;
+  color: var(--text-color);
+}
+
+footer .footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer ul li {
+  margin: 0 0 6px;
+}
+
+footer .footer a {
+  color: var(--color-burnt-orange);
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+footer .footer a:hover {
+  text-decoration: underline;
+}
+
+/* First section: brand info */
+footer .footer > div:first-child {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+footer .footer > div:first-child p:first-child {
+  font-family: var(--heading-font-family);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Middle section: category columns */
+footer .footer > div:nth-child(2) {
+  padding-top: 24px;
+  padding-bottom: 16px;
+}
+
+footer .footer .footer-columns {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+/* Last section: copyright */
+footer .footer > div:last-child {
+  padding-top: 16px;
+  border-top: 1px solid #ddd;
+  font-size: 0.7rem;
+  color: #666;
+}
+
+footer .footer > div:last-child a {
+  font-size: 0.7rem;
+  color: #666;
+}
+
+@media (width >= 600px) {
+  footer .footer .footer-columns {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (width >= 900px) {
   footer .footer > div {
     padding: 40px 32px 24px;
+  }
+
+  footer .footer .footer-columns {
+    grid-template-columns: repeat(5, 1fr);
   }
 }

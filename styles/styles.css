@@ -16,12 +16,18 @@
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --link-color: #c1512e;
+  --link-hover-color: #a03532;
+  --color-amber: #eaa33a;
+  --color-beige: #f5ece0;
+  --color-brown: #3d2c1e;
+  --color-burnt-orange: #c1512e;
+  --color-red: #a03532;
+  --color-footer-beige: #f0e0d2;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --heading-font-family: baskerville, 'Baskerville Old Face', 'Times New Roman', serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -320,6 +326,12 @@ main > .section:first-of-type {
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
+  margin: 0;
+  padding: 40px 0;
+}
+
+main .section.warm-beige {
+  background-color: var(--color-beige);
   margin: 0;
   padding: 40px 0;
 }

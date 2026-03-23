@@ -1,0 +1,73 @@
+.banner-container .banner-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  background-color: #f5ece0;
+  padding: 24px;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.banner .banner-image {
+  flex: 0 0 auto;
+  max-width: 180px;
+}
+
+.banner .banner-image picture,
+.banner .banner-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.banner .banner-content {
+  flex: 1;
+}
+
+.banner .banner-content h2 {
+  font-family: Baskerville, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: #3d2c1e;
+}
+
+.banner .banner-content p {
+  font-family: roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  margin: 0 0 12px;
+  color: #3d2c1e;
+}
+
+.banner .banner-cta {
+  display: inline-block;
+  background-color: #c1512e;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-family: roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.banner .banner-cta:hover {
+  background-color: #a03532;
+}
+
+@media (width < 600px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .banner .banner-image {
+    max-width: 150px;
+  }
+}

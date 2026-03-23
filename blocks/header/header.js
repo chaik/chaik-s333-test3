@@ -116,7 +116,22 @@ export default async function decorate(block) {
   // load nav as fragment
   const navMeta = getMetadata('nav');
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
-  const fragment = await loadFragment(navPath);
+  let fragment = await loadFragment(navPath);
+
+  // fallback nav content when fragment is not available
+  if (!fragment) {
+    fragment = document.createElement('main');
+    fragment.innerHTML = `<div><div class="default-content-wrapper"><p><a href="/us/en">Frescopa</a></p></div></div>
+      <div><div class="default-content-wrapper"><ul>
+        <li><a href="/us/en/coffee">Coffee</a></li>
+        <li><a href="/us/en/tea">Tea</a></li>
+        <li><a href="/us/en/machines">Machines</a></li>
+        <li><a href="/us/en/accessories">Accessories</a></li>
+        <li><a href="/us/en/locations">Locations</a></li>
+        <li><a href="/us/en/sustainability">Sustainability</a></li>
+      </ul></div></div>
+      <div><div class="default-content-wrapper"><p></p></div></div>`;
+  }
 
   // decorate nav DOM
   block.textContent = '';

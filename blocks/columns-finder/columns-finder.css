@@ -1,0 +1,109 @@
+.columns-finder-container .columns-finder-wrapper {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0;
+}
+
+.columns-finder > div {
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  overflow: hidden;
+}
+
+.columns-finder .columns-finder-panel {
+  flex: 0 0 45%;
+  background-color: var(--color-brown);
+  color: #fff;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.columns-finder .columns-finder-panel h2 {
+  font-family: var(--heading-font-family);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 12px;
+  line-height: 1.3;
+}
+
+.columns-finder .columns-finder-panel p {
+  font-family: var(--body-font-family);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #fff;
+  margin: 0 0 12px;
+}
+
+.columns-finder .columns-finder-search {
+  display: flex;
+  gap: 0;
+}
+
+.columns-finder .columns-finder-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: none;
+  font-family: var(--body-font-family);
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.columns-finder .columns-finder-button {
+  background-color: var(--color-burnt-orange);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-family: var(--body-font-family);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.columns-finder .columns-finder-button:hover {
+  background-color: var(--color-red);
+}
+
+.columns-finder .columns-finder-map {
+  flex: 1;
+  background-color: #e8e0d8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.columns-finder .columns-finder-map-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #8a7a6c;
+}
+
+.columns-finder .columns-finder-map-icon svg {
+  width: 48px;
+  height: 48px;
+  stroke: #8a7a6c;
+}
+
+.columns-finder .columns-finder-map-placeholder span {
+  font-family: var(--body-font-family);
+  font-size: 0.875rem;
+}
+
+@media (width >= 600px) {
+  .columns-finder > div {
+    flex-direction: row;
+  }
+
+  .columns-finder .columns-finder-panel {
+    flex: 0 0 45%;
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "templates": [
+    {
+      "name": "homepage",
+      "urls": [
+        "https://publish-p45403-e1547974.adobeaemcloud.com/us/en.html"
+      ],
+      "description": "Frescopa homepage with hero, product highlights, and coffee bean tasting experience section",
+      "blocks": [
+        {
+          "name": "hero",
+          "instances": [
+            ".teaser:has(.cmp-teaser__pretitle)",
+            ".contentfragment.cfoffer"
+          ]
+        },
+        {
+          "name": "banner",
+          "instances": [
+            ".frescopa-banner"
+          ]
+        },
+        {
+          "name": "location-finder",
+          "instances": [
+            ".location-finder"
+          ]
+        },
+        {
+          "name": "cards",
+          "instances": [
+            ".container.flexcolummns"
+          ]
+        }
+      ],
+      "sections": [
+        {
+          "id": "section-1-hero",
+          "name": "Hero Section",
+          "selector": ".teaser:has(.cmp-teaser__pretitle)",
+          "style": null,
+          "blocks": [
+            "hero"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-2-banner",
+          "name": "Banner Section",
+          "selector": ".frescopa-banner",
+          "style": "warm-beige",
+          "blocks": [
+            "banner"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-3-location",
+          "name": "Location Finder Section",
+          "selector": ".location-finder",
+          "style": null,
+          "blocks": [
+            "location-finder"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-4-cards",
+          "name": "Two-Column Cards Section",
+          "selector": ".container.flexcolummns",
+          "style": null,
+          "blocks": [
+            "cards"
+          ],
+          "defaultContent": []
+        },
+        {
+          "id": "section-5-offer",
+          "name": "Offer Section",
+          "selector": ".contentfragment.cfoffer",
+          "style": null,
+          "blocks": [
+            "hero"
+          ],
+          "defaultContent": []
+        }
+      ]
+    }
+  ]
+}
